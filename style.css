@@ -1,0 +1,302 @@
+
+/*GENERAL*/
+html
+{
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+body
+{
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    }
+
+main
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    flex-direction: column;
+    min-height: 86vh;
+    width: 100%;
+    flex-grow: 1;
+    background-color:black;
+    color:white;
+}
+
+@font-face {
+    font-family :'digital';
+    src: url('font/digital-7.ttf') format('truetype');
+}
+
+h1
+{
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    text-transform: uppercase;
+    /*font-family: 'Comfortaa', cursive;*/
+    font-family :'digital';
+    text-shadow: 0 0 15px #00FFFC, 2px 3px 3px #141414, 0 0 50px #00D4D1;
+    color:white;
+}
+
+h2
+{
+    font-size:1.3em;
+    font-weight: bold;
+    color:#00E5D3;
+    font-family: 'Comfortaa', cursive;
+}
+
+a{
+    /*color:black;*/
+    text-decoration: none;
+}
+
+p a:hover
+{
+    color:#001EFF;
+}
+
+form
+{
+    text-align: center;
+    margin:0;
+}
+
+p,li
+{
+    font-size:1.2em;
+    font-family: 'Comfortaa', cursive;
+    color:#00E5D3;
+}
+
+button, input
+{
+    margin:5px;
+    padding:12px;
+    border-radius: 30px;
+    font-size: 1em;
+    box-shadow: none;
+    transition: all 0.7s ease 0s;
+    cursor: pointer;
+    outline: none;
+    width: fit-content;
+    font-family: 'Comfortaa', cursive;
+}
+
+button,input[type="submit"]
+{
+    background-color: white;
+}
+
+
+button:hover,input[type="submit"]:hover
+{
+    background-color: #00E5D3;
+    transition: all 0.7s ease 0s;
+}
+
+/*HEADER*/
+
+header
+{
+    display: flex;
+    width:100%;
+    height:8vh;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A2326;
+}
+
+/*FOOTER*/
+
+footer
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1A2326;
+    color:white;
+    height:6vh;
+}
+
+footer p
+{
+    font-size:0.8em;
+    font-family: 'Comfortaa', cursive;
+    color:white;
+}
+
+
+/*INDEX*/
+
+#index
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+}
+
+.panneau
+{
+    margin:5px;
+    display:flex;
+    flex-direction:column ;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.bloc
+{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: center;
+    align-content: center;
+    align-items:center;
+    max-width:70vw;
+    margin:10px;
+    padding:5px;
+    height: 50vh;
+}
+
+label
+{
+    font-size:1.4em;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    margin:10px;
+}
+
+/*OCLOCK*/
+
+.boutons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.boutons div
+{
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    align-items: center;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+}
+
+.icone
+{
+    width: 50px;
+    margin:5px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.icone:hover
+{
+    transform: scale(1.2);
+}
+
+/*MINUTEUR*/
+
+#minuteur
+{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa', cursive;
+}
+
+#minuteur_text, #minuteur_form
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#minuteur_text
+{
+    width: 400px;
+    margin-right: 120px;
+    margin-left:20px;
+}
+
+#minuteur input
+{
+    width: 100px;
+}
+
+#count
+{
+    margin:80px;
+    font-size: large;
+}
+
+/*HORLOGE*/
+
+.heures
+{
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.heures p
+{
+    display: flex;
+    font-size: 3em;
+    font-family :'digital';
+}
+
+/*ALARME+CHRONO*/
+#table
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    margin:30px;
+}
+
+#alarm_table, #chrono_table
+{
+    margin:30px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#alarm_table td,#alarm_table th, #chrono_table td, #chrono_table th
+{
+    padding:15px;
+    margin:10px;
+}
